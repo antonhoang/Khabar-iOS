@@ -15,6 +15,22 @@
 extern void BoardLayout_GetLayout_m598466A4B01D037F7E2C8DD9EC9B6FB61C9F028F (void);
 extern void BoardLayout__ctor_m183A5A0267C96B862244C8E1B4A984BBA46F45D6 (void);
 extern void LayoutRow__ctor_mFFD68A33F5E21C7F3648E028473D4AF35928A17F (void);
+extern void CanvasRoundOverBox_OnEnable_m225F4B7D44C985EFAAFA9E79B4E85C8762B159D6 (void);
+extern void CanvasRoundOverBox_AnimateBackground_m22C5D56E9C3E6C1ACF6B7AA79A7F96A6FAD05DD5 (void);
+extern void CanvasRoundOverBox_AnimateBox_mDCB19A240F1A453ED937CEA5204B71D2DB49DB21 (void);
+extern void CanvasRoundOverBox__ctor_mCCC7306C97BAA8F9241278B52EE365D1C1D47AA7 (void);
+extern void U3CAnimateBackgroundU3Ed__4__ctor_mB7492EE98E0C9AB6AEAEA8B5AFE42705E26C874E (void);
+extern void U3CAnimateBackgroundU3Ed__4_System_IDisposable_Dispose_m833CC149BFB381C248E9696C475410937AACD70A (void);
+extern void U3CAnimateBackgroundU3Ed__4_MoveNext_m7523893A6FA2EABC3B9CA3A45B8C95CED69F0078 (void);
+extern void U3CAnimateBackgroundU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1E0E982F632C396E2EF0D1AB578407210F3E1525 (void);
+extern void U3CAnimateBackgroundU3Ed__4_System_Collections_IEnumerator_Reset_mCD56968BA206F704D2D7B4ACEE71F4C76822068B (void);
+extern void U3CAnimateBackgroundU3Ed__4_System_Collections_IEnumerator_get_Current_m2565C57721ACF0D0B4151669BE5C7D220B95DA62 (void);
+extern void U3CAnimateBoxU3Ed__5__ctor_m1BC0B5E7CEE22EC86C3A4CF64727F99F9B72728C (void);
+extern void U3CAnimateBoxU3Ed__5_System_IDisposable_Dispose_mA47FE609B356D6F40C6D2B98AB8FA95A216C8C70 (void);
+extern void U3CAnimateBoxU3Ed__5_MoveNext_m9CDB47D30BA24DBFB1801469F38E5B2CF194E9E6 (void);
+extern void U3CAnimateBoxU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1DFBCBE779FDFE63374F45380A140A9961832832 (void);
+extern void U3CAnimateBoxU3Ed__5_System_Collections_IEnumerator_Reset_m3E574A2693CC6FE1E3883B76604FBCBCE490ADAD (void);
+extern void U3CAnimateBoxU3Ed__5_System_Collections_IEnumerator_get_Current_m0E8310FB579F3AF31B216CFFBA13D89CCF8725EA (void);
 extern void MapButton_OnMouseDown_m88391F05B8104509B884AA652473D14F638422D8 (void);
 extern void MapButton__ctor_mB69D32BCCC2812673262B273F5824807FEFBB4A5 (void);
 extern void OnShopItemClick_add_OnItemClick_mC4FD84CD51DAF53DE293B7C85E297B36B847B2B4 (void);
@@ -109,7 +125,6 @@ extern void RoundManager_Update_m951ACC85D6A50C0B968DF602B2AC86767177282D (void)
 extern void RoundManager_ResultingScore_m90DD36989D56E5F4DDA0F8BCFFE3D193C0ADBF4B (void);
 extern void RoundManager_LateUpdate_mB290C3DF2B6E607375EDD273B3346A52BC2E90D2 (void);
 extern void RoundManager_RoundTime_m3AA214A16D016ED1170A56A31E543FDEE5356415 (void);
-extern void RoundManager_WinCheck_m9A0A28B7F9E4BDA382075BF8B706CB656DC2348B (void);
 extern void RoundManager__ctor_mD60399260A24E671514C92C27040631D2657EFD4 (void);
 extern void ShopItemList__ctor_m3C9F2981F72EE36AFD0522ADD02E3E1022FD23B5 (void);
 extern void ShopManager_Update_mCF4788DF303DCB88EBE552B3D9276247188C0C3B (void);
@@ -487,11 +502,27 @@ extern void U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B0
 extern void U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
-static Il2CppMethodPointer s_methodPointers[475] = 
+static Il2CppMethodPointer s_methodPointers[490] = 
 {
 	BoardLayout_GetLayout_m598466A4B01D037F7E2C8DD9EC9B6FB61C9F028F,
 	BoardLayout__ctor_m183A5A0267C96B862244C8E1B4A984BBA46F45D6,
 	LayoutRow__ctor_mFFD68A33F5E21C7F3648E028473D4AF35928A17F,
+	CanvasRoundOverBox_OnEnable_m225F4B7D44C985EFAAFA9E79B4E85C8762B159D6,
+	CanvasRoundOverBox_AnimateBackground_m22C5D56E9C3E6C1ACF6B7AA79A7F96A6FAD05DD5,
+	CanvasRoundOverBox_AnimateBox_mDCB19A240F1A453ED937CEA5204B71D2DB49DB21,
+	CanvasRoundOverBox__ctor_mCCC7306C97BAA8F9241278B52EE365D1C1D47AA7,
+	U3CAnimateBackgroundU3Ed__4__ctor_mB7492EE98E0C9AB6AEAEA8B5AFE42705E26C874E,
+	U3CAnimateBackgroundU3Ed__4_System_IDisposable_Dispose_m833CC149BFB381C248E9696C475410937AACD70A,
+	U3CAnimateBackgroundU3Ed__4_MoveNext_m7523893A6FA2EABC3B9CA3A45B8C95CED69F0078,
+	U3CAnimateBackgroundU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1E0E982F632C396E2EF0D1AB578407210F3E1525,
+	U3CAnimateBackgroundU3Ed__4_System_Collections_IEnumerator_Reset_mCD56968BA206F704D2D7B4ACEE71F4C76822068B,
+	U3CAnimateBackgroundU3Ed__4_System_Collections_IEnumerator_get_Current_m2565C57721ACF0D0B4151669BE5C7D220B95DA62,
+	U3CAnimateBoxU3Ed__5__ctor_m1BC0B5E7CEE22EC86C3A4CF64727F99F9B72728C,
+	U3CAnimateBoxU3Ed__5_System_IDisposable_Dispose_mA47FE609B356D6F40C6D2B98AB8FA95A216C8C70,
+	U3CAnimateBoxU3Ed__5_MoveNext_m9CDB47D30BA24DBFB1801469F38E5B2CF194E9E6,
+	U3CAnimateBoxU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1DFBCBE779FDFE63374F45380A140A9961832832,
+	U3CAnimateBoxU3Ed__5_System_Collections_IEnumerator_Reset_m3E574A2693CC6FE1E3883B76604FBCBCE490ADAD,
+	U3CAnimateBoxU3Ed__5_System_Collections_IEnumerator_get_Current_m0E8310FB579F3AF31B216CFFBA13D89CCF8725EA,
 	MapButton_OnMouseDown_m88391F05B8104509B884AA652473D14F638422D8,
 	MapButton__ctor_mB69D32BCCC2812673262B273F5824807FEFBB4A5,
 	OnShopItemClick_add_OnItemClick_mC4FD84CD51DAF53DE293B7C85E297B36B847B2B4,
@@ -586,7 +617,6 @@ static Il2CppMethodPointer s_methodPointers[475] =
 	RoundManager_ResultingScore_m90DD36989D56E5F4DDA0F8BCFFE3D193C0ADBF4B,
 	RoundManager_LateUpdate_mB290C3DF2B6E607375EDD273B3346A52BC2E90D2,
 	RoundManager_RoundTime_m3AA214A16D016ED1170A56A31E543FDEE5356415,
-	RoundManager_WinCheck_m9A0A28B7F9E4BDA382075BF8B706CB656DC2348B,
 	RoundManager__ctor_mD60399260A24E671514C92C27040631D2657EFD4,
 	ShopItemList__ctor_m3C9F2981F72EE36AFD0522ADD02E3E1022FD23B5,
 	ShopManager_Update_mCF4788DF303DCB88EBE552B3D9276247188C0C3B,
@@ -965,11 +995,27 @@ static Il2CppMethodPointer s_methodPointers[475] =
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42,
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19,
 };
-static const int32_t s_InvokerIndices[475] = 
+static const int32_t s_InvokerIndices[490] = 
 {
 	1523,
 	1583,
 	1583,
+	1583,
+	1523,
+	1523,
+	1583,
+	1372,
+	1583,
+	1482,
+	1523,
+	1583,
+	1523,
+	1372,
+	1583,
+	1482,
+	1523,
+	1583,
+	1523,
 	1583,
 	1583,
 	1380,
@@ -1058,7 +1104,6 @@ static const int32_t s_InvokerIndices[475] =
 	3196,
 	3132,
 	3132,
-	1583,
 	1583,
 	1583,
 	1583,
@@ -1447,7 +1492,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	475,
+	490,
 	s_methodPointers,
 	0,
 	NULL,
