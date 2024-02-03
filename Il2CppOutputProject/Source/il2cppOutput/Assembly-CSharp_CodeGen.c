@@ -53,6 +53,7 @@ extern void Board_RefillBoard_m4034AA58880354C78750AC79BA59AF74C800ED90 (void);
 extern void Board_CheckMisplacedGems_mA5B45D4563A1E04791ACCC278EB8F83AC874F91C (void);
 extern void Board_ShuffleBoard_m1821CA4ECDE41242A5DAA40B762002A08D2E858F (void);
 extern void Board_ScoreCheck_m6AFF048304380221A3EB53EE4CC9887608C48B26 (void);
+extern void Board_ResultingScore_m9A2ACE5B1E94D892F01C8EA651458FE70559F2AA (void);
 extern void Board__ctor_mD7649814C6B9E7EF83936BA430C66B0824FE3B5E (void);
 extern void U3CDecreaseRowCoU3Ed__25__ctor_m356C62DD8024F85CDA6FFEDF6511A378338781EE (void);
 extern void U3CDecreaseRowCoU3Ed__25_System_IDisposable_Dispose_m4C1825EED92C5C40671A6E16363B8240F0B0D5D4 (void);
@@ -121,6 +122,7 @@ extern void CoinManager_RemoveCoins_mCC983B48A424DB5CBD6BDC4624C77BF8F283BF4F (v
 extern void CoinManager__ctor_m8E5AB576E3FAC5157F181ED7E13B3F120F12510E (void);
 extern void RoundManager_Awake_mD33CD2E3BB56B38E823DBA98740FF46CB9321539 (void);
 extern void RoundManager_Update_m951ACC85D6A50C0B968DF602B2AC86767177282D (void);
+extern void RoundManager_ResultingScore_m90DD36989D56E5F4DDA0F8BCFFE3D193C0ADBF4B (void);
 extern void RoundManager_LateUpdate_mB290C3DF2B6E607375EDD273B3346A52BC2E90D2 (void);
 extern void RoundManager_RoundTime_m3AA214A16D016ED1170A56A31E543FDEE5356415 (void);
 extern void RoundManager__ctor_mD60399260A24E671514C92C27040631D2657EFD4 (void);
@@ -199,12 +201,14 @@ extern void U3CAnimateYPositionU3Ed__11_System_Collections_Generic_IEnumeratorU3
 extern void U3CAnimateYPositionU3Ed__11_System_Collections_IEnumerator_Reset_m4AAA0BB02366FBA1B2D52D598247F65B9534A3C6 (void);
 extern void U3CAnimateYPositionU3Ed__11_System_Collections_IEnumerator_get_Current_m585BD83AF0EE1F4F0066CA4C52BDD900B8A09875 (void);
 extern void KhabarDetailPopup_Awake_m310A2BC88F6F2805D24D8888D04B96732C6E2757 (void);
+extern void KhabarDetailPopup_Start_mD3357C7F7AF6EB89937BAFA1E0E4EDDFD389F940 (void);
 extern void KhabarDetailPopup_ShowDetails_m30529C9A731D58D94D24FFA088B85DEBE992D129 (void);
 extern void KhabarDetailPopup_SetImageTarget_mDBADFF924AE93FE1A00CF5636F27B0BF71FA9805 (void);
 extern void KhabarDetailPopup_SetTextDescription_mF81F402745D01EC804C5FFF9EC8FE6754EF07162 (void);
 extern void KhabarDetailPopup_SetTextPrice_m3EF120FADE8F56EDC7AA9009E2CCAD9135E95453 (void);
 extern void KhabarDetailPopup_BuyItem_mF0BD87FE2934C32CFA718961F17D42B82EBE2335 (void);
-extern void KhabarDetailPopup_ShowNotEnoughMoneyLabel_m892315F76F8F9B9F7E64C7CA976237FACFBD6161 (void);
+extern void KhabarDetailPopup_FadeCoinLabel_mA2A598245D89861012063E76223B59C302514FA9 (void);
+extern void KhabarDetailPopup_ShowNotEnoughMoneyView_m5753CCB1B8FB27E0E0A2D956CA3A1039349FEFEE (void);
 extern void KhabarDetailPopup_SetLabelAlpha_m44B2FABE4C98667ADE2AA85A1E5E9F96E5C58687 (void);
 extern void KhabarDetailPopup_ShakeCoinLabels_m49F6900938AFF14B2AB200A3D1C24CEA51A30FDB (void);
 extern void KhabarDetailPopup_UpdateBuyButton_mBEC5405CB59702BE0342979B88B9B8A05B6A1F06 (void);
@@ -217,12 +221,18 @@ extern void KhabarDetailPopup_CloseSupportUs_m7C40A8DF10E7DE19DA646CF541A4FD008A
 extern void KhabarDetailPopup_CloseSupportUA_m742DAE9D08071C77734C34EB1F70A50BD3BBECF1 (void);
 extern void KhabarDetailPopup_Back_m4ACFC85CDE694EE0F0331B4178754B9161163D0F (void);
 extern void KhabarDetailPopup__ctor_m0AEDEC131395BC78B02A38907248B4401789D3C0 (void);
-extern void U3CShowNotEnoughMoneyLabelU3Ed__16__ctor_mC9B23E58B083273BA894F1F48D84714465496067 (void);
-extern void U3CShowNotEnoughMoneyLabelU3Ed__16_System_IDisposable_Dispose_mE6A43437755BAB88F472DDF7EB119DF4F481010A (void);
-extern void U3CShowNotEnoughMoneyLabelU3Ed__16_MoveNext_mC6A53256E9120F7AA78BE0FEDE683C456B97499A (void);
-extern void U3CShowNotEnoughMoneyLabelU3Ed__16_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2838E824E447BAECA783BEC013D933A3AF0FD369 (void);
-extern void U3CShowNotEnoughMoneyLabelU3Ed__16_System_Collections_IEnumerator_Reset_m5B017129EACE5BF11B13CE2BFAFE3989E45F365D (void);
-extern void U3CShowNotEnoughMoneyLabelU3Ed__16_System_Collections_IEnumerator_get_Current_m7035C96951F41B7432B67206E02E1DB7C59E4396 (void);
+extern void U3CFadeCoinLabelU3Ed__18__ctor_mE3AAAEB9ED59716A8EBAB1FF2B0661C5BA3B01FB (void);
+extern void U3CFadeCoinLabelU3Ed__18_System_IDisposable_Dispose_mA30F949ADD76AD5AD9CC7926EF28A9D559AFDC54 (void);
+extern void U3CFadeCoinLabelU3Ed__18_MoveNext_m666121BC768210650B2358BD47AB91A81200513F (void);
+extern void U3CFadeCoinLabelU3Ed__18_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m287C1301DFFCE4C57E18E8BDFD359C3A885E689A (void);
+extern void U3CFadeCoinLabelU3Ed__18_System_Collections_IEnumerator_Reset_mED96BE7A42B8A27763E225C42DDCB209FB8F0C38 (void);
+extern void U3CFadeCoinLabelU3Ed__18_System_Collections_IEnumerator_get_Current_m76CBB734207329E6C00336B7CE9D28CC7A43A17F (void);
+extern void U3CShowNotEnoughMoneyViewU3Ed__20__ctor_m432C2AF464A57DD56D1667426F91E57115BEB7F8 (void);
+extern void U3CShowNotEnoughMoneyViewU3Ed__20_System_IDisposable_Dispose_m77795501DED17E5E7121926ACF45A9AE614E48B6 (void);
+extern void U3CShowNotEnoughMoneyViewU3Ed__20_MoveNext_mB7CDA3D11C306737A75A43FF963DF1AD5EEF0280 (void);
+extern void U3CShowNotEnoughMoneyViewU3Ed__20_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA52BD47CC260218DAB9D7F58F4108835DF0F865F (void);
+extern void U3CShowNotEnoughMoneyViewU3Ed__20_System_Collections_IEnumerator_Reset_m5236D896A0BAF6BB2E27FC049DCF2945C1BD2D2A (void);
+extern void U3CShowNotEnoughMoneyViewU3Ed__20_System_Collections_IEnumerator_get_Current_m209A9014847C8695BD0715F5410AC80B77DB20A8 (void);
 extern void ImageWithCorners_Start_m58B31F22A2EDC73629EBBEAE005EAE8A9B5EF007 (void);
 extern void ImageWithCorners_SetCornerRadius_m83B74DB6DE12934532BCF9180DA073FEEC4DA260 (void);
 extern void ImageWithCorners__ctor_mAD182FC63FFCF2122392071C00718C576C9FD338 (void);
@@ -515,7 +525,7 @@ extern void U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B0
 extern void U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
-static Il2CppMethodPointer s_methodPointers[503] = 
+static Il2CppMethodPointer s_methodPointers[514] = 
 {
 	BoardLayout_GetLayout_m598466A4B01D037F7E2C8DD9EC9B6FB61C9F028F,
 	BoardLayout__ctor_m183A5A0267C96B862244C8E1B4A984BBA46F45D6,
@@ -558,6 +568,7 @@ static Il2CppMethodPointer s_methodPointers[503] =
 	Board_CheckMisplacedGems_mA5B45D4563A1E04791ACCC278EB8F83AC874F91C,
 	Board_ShuffleBoard_m1821CA4ECDE41242A5DAA40B762002A08D2E858F,
 	Board_ScoreCheck_m6AFF048304380221A3EB53EE4CC9887608C48B26,
+	Board_ResultingScore_m9A2ACE5B1E94D892F01C8EA651458FE70559F2AA,
 	Board__ctor_mD7649814C6B9E7EF83936BA430C66B0824FE3B5E,
 	U3CDecreaseRowCoU3Ed__25__ctor_m356C62DD8024F85CDA6FFEDF6511A378338781EE,
 	U3CDecreaseRowCoU3Ed__25_System_IDisposable_Dispose_m4C1825EED92C5C40671A6E16363B8240F0B0D5D4,
@@ -626,6 +637,7 @@ static Il2CppMethodPointer s_methodPointers[503] =
 	CoinManager__ctor_m8E5AB576E3FAC5157F181ED7E13B3F120F12510E,
 	RoundManager_Awake_mD33CD2E3BB56B38E823DBA98740FF46CB9321539,
 	RoundManager_Update_m951ACC85D6A50C0B968DF602B2AC86767177282D,
+	RoundManager_ResultingScore_m90DD36989D56E5F4DDA0F8BCFFE3D193C0ADBF4B,
 	RoundManager_LateUpdate_mB290C3DF2B6E607375EDD273B3346A52BC2E90D2,
 	RoundManager_RoundTime_m3AA214A16D016ED1170A56A31E543FDEE5356415,
 	RoundManager__ctor_mD60399260A24E671514C92C27040631D2657EFD4,
@@ -704,12 +716,15 @@ static Il2CppMethodPointer s_methodPointers[503] =
 	U3CAnimateYPositionU3Ed__11_System_Collections_IEnumerator_Reset_m4AAA0BB02366FBA1B2D52D598247F65B9534A3C6,
 	U3CAnimateYPositionU3Ed__11_System_Collections_IEnumerator_get_Current_m585BD83AF0EE1F4F0066CA4C52BDD900B8A09875,
 	KhabarDetailPopup_Awake_m310A2BC88F6F2805D24D8888D04B96732C6E2757,
+	KhabarDetailPopup_Start_mD3357C7F7AF6EB89937BAFA1E0E4EDDFD389F940,
 	KhabarDetailPopup_ShowDetails_m30529C9A731D58D94D24FFA088B85DEBE992D129,
 	KhabarDetailPopup_SetImageTarget_mDBADFF924AE93FE1A00CF5636F27B0BF71FA9805,
 	KhabarDetailPopup_SetTextDescription_mF81F402745D01EC804C5FFF9EC8FE6754EF07162,
 	KhabarDetailPopup_SetTextPrice_m3EF120FADE8F56EDC7AA9009E2CCAD9135E95453,
 	KhabarDetailPopup_BuyItem_mF0BD87FE2934C32CFA718961F17D42B82EBE2335,
-	KhabarDetailPopup_ShowNotEnoughMoneyLabel_m892315F76F8F9B9F7E64C7CA976237FACFBD6161,
+	KhabarDetailPopup_FadeCoinLabel_mA2A598245D89861012063E76223B59C302514FA9,
+	NULL,
+	KhabarDetailPopup_ShowNotEnoughMoneyView_m5753CCB1B8FB27E0E0A2D956CA3A1039349FEFEE,
 	KhabarDetailPopup_SetLabelAlpha_m44B2FABE4C98667ADE2AA85A1E5E9F96E5C58687,
 	KhabarDetailPopup_ShakeCoinLabels_m49F6900938AFF14B2AB200A3D1C24CEA51A30FDB,
 	KhabarDetailPopup_UpdateBuyButton_mBEC5405CB59702BE0342979B88B9B8A05B6A1F06,
@@ -722,12 +737,18 @@ static Il2CppMethodPointer s_methodPointers[503] =
 	KhabarDetailPopup_CloseSupportUA_m742DAE9D08071C77734C34EB1F70A50BD3BBECF1,
 	KhabarDetailPopup_Back_m4ACFC85CDE694EE0F0331B4178754B9161163D0F,
 	KhabarDetailPopup__ctor_m0AEDEC131395BC78B02A38907248B4401789D3C0,
-	U3CShowNotEnoughMoneyLabelU3Ed__16__ctor_mC9B23E58B083273BA894F1F48D84714465496067,
-	U3CShowNotEnoughMoneyLabelU3Ed__16_System_IDisposable_Dispose_mE6A43437755BAB88F472DDF7EB119DF4F481010A,
-	U3CShowNotEnoughMoneyLabelU3Ed__16_MoveNext_mC6A53256E9120F7AA78BE0FEDE683C456B97499A,
-	U3CShowNotEnoughMoneyLabelU3Ed__16_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2838E824E447BAECA783BEC013D933A3AF0FD369,
-	U3CShowNotEnoughMoneyLabelU3Ed__16_System_Collections_IEnumerator_Reset_m5B017129EACE5BF11B13CE2BFAFE3989E45F365D,
-	U3CShowNotEnoughMoneyLabelU3Ed__16_System_Collections_IEnumerator_get_Current_m7035C96951F41B7432B67206E02E1DB7C59E4396,
+	U3CFadeCoinLabelU3Ed__18__ctor_mE3AAAEB9ED59716A8EBAB1FF2B0661C5BA3B01FB,
+	U3CFadeCoinLabelU3Ed__18_System_IDisposable_Dispose_mA30F949ADD76AD5AD9CC7926EF28A9D559AFDC54,
+	U3CFadeCoinLabelU3Ed__18_MoveNext_m666121BC768210650B2358BD47AB91A81200513F,
+	U3CFadeCoinLabelU3Ed__18_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m287C1301DFFCE4C57E18E8BDFD359C3A885E689A,
+	U3CFadeCoinLabelU3Ed__18_System_Collections_IEnumerator_Reset_mED96BE7A42B8A27763E225C42DDCB209FB8F0C38,
+	U3CFadeCoinLabelU3Ed__18_System_Collections_IEnumerator_get_Current_m76CBB734207329E6C00336B7CE9D28CC7A43A17F,
+	U3CShowNotEnoughMoneyViewU3Ed__20__ctor_m432C2AF464A57DD56D1667426F91E57115BEB7F8,
+	U3CShowNotEnoughMoneyViewU3Ed__20_System_IDisposable_Dispose_m77795501DED17E5E7121926ACF45A9AE614E48B6,
+	U3CShowNotEnoughMoneyViewU3Ed__20_MoveNext_mB7CDA3D11C306737A75A43FF963DF1AD5EEF0280,
+	U3CShowNotEnoughMoneyViewU3Ed__20_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA52BD47CC260218DAB9D7F58F4108835DF0F865F,
+	U3CShowNotEnoughMoneyViewU3Ed__20_System_Collections_IEnumerator_Reset_m5236D896A0BAF6BB2E27FC049DCF2945C1BD2D2A,
+	U3CShowNotEnoughMoneyViewU3Ed__20_System_Collections_IEnumerator_get_Current_m209A9014847C8695BD0715F5410AC80B77DB20A8,
 	ImageWithCorners_Start_m58B31F22A2EDC73629EBBEAE005EAE8A9B5EF007,
 	ImageWithCorners_SetCornerRadius_m83B74DB6DE12934532BCF9180DA073FEEC4DA260,
 	ImageWithCorners__ctor_mAD182FC63FFCF2122392071C00718C576C9FD338,
@@ -1021,7 +1042,7 @@ static Il2CppMethodPointer s_methodPointers[503] =
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42,
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19,
 };
-static const int32_t s_InvokerIndices[503] = 
+static const int32_t s_InvokerIndices[514] = 
 {
 	1523,
 	1583,
@@ -1064,6 +1085,7 @@ static const int32_t s_InvokerIndices[503] =
 	1583,
 	1583,
 	1380,
+	1583,
 	1583,
 	1372,
 	1583,
@@ -1126,9 +1148,10 @@ static const int32_t s_InvokerIndices[503] =
 	1523,
 	1583,
 	1523,
-	3196,
-	3132,
-	3132,
+	3197,
+	3133,
+	3133,
+	1583,
 	1583,
 	1583,
 	1583,
@@ -1210,11 +1233,14 @@ static const int32_t s_InvokerIndices[503] =
 	1583,
 	1523,
 	1583,
+	1583,
 	638,
 	1380,
 	1380,
 	1380,
 	1583,
+	1523,
+	0,
 	1523,
 	1399,
 	1583,
@@ -1228,6 +1254,12 @@ static const int32_t s_InvokerIndices[503] =
 	1583,
 	1583,
 	1583,
+	1372,
+	1583,
+	1482,
+	1523,
+	1583,
+	1523,
 	1372,
 	1583,
 	1482,
@@ -1274,7 +1306,7 @@ static const int32_t s_InvokerIndices[503] =
 	1583,
 	1583,
 	1583,
-	3239,
+	3240,
 	1583,
 	542,
 	1583,
@@ -1394,7 +1426,7 @@ static const int32_t s_InvokerIndices[503] =
 	1523,
 	1523,
 	1583,
-	3235,
+	3236,
 	1372,
 	1583,
 	1482,
@@ -1527,21 +1559,36 @@ static const int32_t s_InvokerIndices[503] =
 	1583,
 	1523,
 };
+static const Il2CppTokenRangePair s_rgctxIndices[1] = 
+{
+	{ 0x060000C5, { 0, 4 } },
+};
+extern const uint32_t g_rgctx_List_1_t7A8D24DAC6CFF538D5F7A0C950B6BDDD34CAC4DE;
+extern const uint32_t g_rgctx_List_1_get_Count_m7457007CA551834C252E21CD054FA188C8F8EE0B;
+extern const uint32_t g_rgctx_List_1_get_Item_m1E1A9B3D9B56A7EDEA1A8B8A5F6848BB16382A77;
+extern const uint32_t g_rgctx_T_t88EF63482E9B6492265591AF2541A2F4D22FD151;
+static const Il2CppRGCTXDefinition s_rgctxValues[4] = 
+{
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_List_1_t7A8D24DAC6CFF538D5F7A0C950B6BDDD34CAC4DE },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_List_1_get_Count_m7457007CA551834C252E21CD054FA188C8F8EE0B },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_List_1_get_Item_m1E1A9B3D9B56A7EDEA1A8B8A5F6848BB16382A77 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_T_t88EF63482E9B6492265591AF2541A2F4D22FD151 },
+};
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	503,
+	514,
 	s_methodPointers,
 	0,
 	NULL,
 	s_InvokerIndices,
 	0,
 	NULL,
-	0,
-	NULL,
-	0,
-	NULL,
+	1,
+	s_rgctxIndices,
+	4,
+	s_rgctxValues,
 	NULL,
 	NULL,
 	NULL,
