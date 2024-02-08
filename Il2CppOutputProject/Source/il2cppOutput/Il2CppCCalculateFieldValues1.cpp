@@ -1691,7 +1691,7 @@ struct U3CAnimatePropertiesU3Ed__6_tF5A2F267919D456EDB1730E0AF6F8776728475FB  : 
 	RuntimeObject* ___U3CU3E2__current;
 	ShaderPropAnimator_t768B23A41FC3CFB5B3C2501C2411B4DEBA296906* ___U3CU3E4__this;
 };
-struct U3CU3Ec__DisplayClass15_0_t5B79EAE70D05E34D48712047D56F415082401FDF  : public RuntimeObject
+struct U3CU3Ec__DisplayClass16_0_tDFE772486FF11AA16F44FE61D0A46BCE1455FC29  : public RuntimeObject
 {
 	ShopItem_t0C78D9AF43B2B24E97C85D3D14136E2438683C30* ___shopItem;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___item;
@@ -18244,7 +18244,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3679[1] =
 	static_cast<int32_t>(offsetof(ShopItemList_t9B0978BE7006CCBD7EDF89D8EBBC4DE403367D74, ___items)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3680[4] = 
 {
-	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass15_0_t5B79EAE70D05E34D48712047D56F415082401FDF, ___shopItem)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass15_0_t5B79EAE70D05E34D48712047D56F415082401FDF, ___item)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass15_0_t5B79EAE70D05E34D48712047D56F415082401FDF, ___U3CU3E4__this)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass15_0_t5B79EAE70D05E34D48712047D56F415082401FDF, ___backbtn)),};
+	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass16_0_tDFE772486FF11AA16F44FE61D0A46BCE1455FC29, ___shopItem)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass16_0_tDFE772486FF11AA16F44FE61D0A46BCE1455FC29, ___item)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass16_0_tDFE772486FF11AA16F44FE61D0A46BCE1455FC29, ___U3CU3E4__this)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass16_0_tDFE772486FF11AA16F44FE61D0A46BCE1455FC29, ___backbtn)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3681[5] = 
 {
 	static_cast<int32_t>(offsetof(ShopManager_t2D45E66C1EF9241EF7FC76C56D0ECADDC34B81D1, ___scrollview)),static_cast<int32_t>(offsetof(ShopManager_t2D45E66C1EF9241EF7FC76C56D0ECADDC34B81D1, ___ShopItemsList)),static_cast<int32_t>(offsetof(ShopManager_t2D45E66C1EF9241EF7FC76C56D0ECADDC34B81D1, ___khabarDetailPopup)),static_cast<int32_t>(offsetof(ShopManager_t2D45E66C1EF9241EF7FC76C56D0ECADDC34B81D1, ___currentCoins)),static_cast<int32_t>(offsetof(ShopManager_t2D45E66C1EF9241EF7FC76C56D0ECADDC34B81D1, ___itemTemplate)),};
