@@ -12,6 +12,7 @@
 
 
 
+extern void BoardLayout_ConvertToGems_m9E5BAEF1E1AE7A10B97B659216EF9D2F597AE349 (void);
 extern void BoardLayout_GetLayout_m598466A4B01D037F7E2C8DD9EC9B6FB61C9F028F (void);
 extern void BoardLayout__ctor_m183A5A0267C96B862244C8E1B4A984BBA46F45D6 (void);
 extern void LayoutRow__ctor_mFFD68A33F5E21C7F3648E028473D4AF35928A17F (void);
@@ -303,6 +304,7 @@ extern void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (void);
 extern void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (void);
 extern void UniversalLevelManager_Start_mBF31170E1C917241A3ABA014238A8BC994170196 (void);
 extern void UniversalLevelManager_Update_m59D49E2171CE050123E1B6BDDE3719C2266315C4 (void);
+extern void UniversalLevelManager_GoToMainMenu_m0E2ED2421DB18AE2A6FF5EF8BC1571DAE216CA58 (void);
 extern void UniversalLevelManager__ctor_mFD139C5EDB910DF7CDF25B43013DC824AF19659E (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
@@ -556,8 +558,9 @@ extern void U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B0
 extern void U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
-static Il2CppMethodPointer s_methodPointers[545] = 
+static Il2CppMethodPointer s_methodPointers[547] = 
 {
+	BoardLayout_ConvertToGems_m9E5BAEF1E1AE7A10B97B659216EF9D2F597AE349,
 	BoardLayout_GetLayout_m598466A4B01D037F7E2C8DD9EC9B6FB61C9F028F,
 	BoardLayout__ctor_m183A5A0267C96B862244C8E1B4A984BBA46F45D6,
 	LayoutRow__ctor_mFFD68A33F5E21C7F3648E028473D4AF35928A17F,
@@ -850,6 +853,7 @@ static Il2CppMethodPointer s_methodPointers[545] =
 	Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B,
 	UniversalLevelManager_Start_mBF31170E1C917241A3ABA014238A8BC994170196,
 	UniversalLevelManager_Update_m59D49E2171CE050123E1B6BDDE3719C2266315C4,
+	UniversalLevelManager_GoToMainMenu_m0E2ED2421DB18AE2A6FF5EF8BC1571DAE216CA58,
 	UniversalLevelManager__ctor_mFD139C5EDB910DF7CDF25B43013DC824AF19659E,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
@@ -1104,8 +1108,9 @@ static Il2CppMethodPointer s_methodPointers[545] =
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42,
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19,
 };
-static const int32_t s_InvokerIndices[545] = 
+static const int32_t s_InvokerIndices[547] = 
 {
+	1254,
 	1524,
 	1584,
 	1584,
@@ -1399,6 +1404,7 @@ static const int32_t s_InvokerIndices[545] =
 	1584,
 	1584,
 	1584,
+	1584,
 	3241,
 	1584,
 	542,
@@ -1654,7 +1660,7 @@ static const int32_t s_InvokerIndices[545] =
 };
 static const Il2CppTokenRangePair s_rgctxIndices[1] = 
 {
-	{ 0x060000E4, { 0, 4 } },
+	{ 0x060000E5, { 0, 4 } },
 };
 extern const uint32_t g_rgctx_List_1_t7A8D24DAC6CFF538D5F7A0C950B6BDDD34CAC4DE;
 extern const uint32_t g_rgctx_List_1_get_Count_m7457007CA551834C252E21CD054FA188C8F8EE0B;
@@ -1671,7 +1677,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	545,
+	547,
 	s_methodPointers,
 	0,
 	NULL,
