@@ -33,8 +33,8 @@ static const int32_t s_InvokerIndices[6] =
 	2751,
 	2454,
 	2063,
-	2926,
-	3027,
+	2927,
+	3028,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Unity_InternalAPIEngineBridge_001_CodeGenModule;
 const Il2CppCodeGenModule g_Unity_InternalAPIEngineBridge_001_CodeGenModule = 

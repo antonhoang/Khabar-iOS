@@ -162,6 +162,14 @@ extern void RoundManager_ResultingScore_m90DD36989D56E5F4DDA0F8BCFFE3D193C0ADBF4
 extern void RoundManager_LateUpdate_mB290C3DF2B6E607375EDD273B3346A52BC2E90D2 (void);
 extern void RoundManager_RoundTime_m3AA214A16D016ED1170A56A31E543FDEE5356415 (void);
 extern void RoundManager__ctor_mD60399260A24E671514C92C27040631D2657EFD4 (void);
+extern void SFXManager_Awake_m5A18A23E994FC28BC19A86C1E99B09D671E0879D (void);
+extern void SFXManager_PlaySwipeForward_m74B78F494402BC8A67E4CABBB5DB5CDF3763008E (void);
+extern void SFXManager_PlaySwipeBack_mBB2C5134CCD172EF84811CE5DD29E0BD24F01C00 (void);
+extern void SFXManager_PlayGemBreak_m2F27AF7B04BA4CD46D65A50164B25EDD96DF8853 (void);
+extern void SFXManager_PlayExplode_m6024314A49751B4418C077330CF7BDAB67279E17 (void);
+extern void SFXManager_PlayStoneBreak_mA84BB7EE811F713727B12615BAA717F9D7725064 (void);
+extern void SFXManager_PlayRoundOver_m6D8950D075822EF5B4CCA74719EEB4F6F0DB7176 (void);
+extern void SFXManager__ctor_m033D29A7E11F09A60ED2C387E8A3380392FDCA27 (void);
 extern void ShopItemList__ctor_m3C9F2981F72EE36AFD0522ADD02E3E1022FD23B5 (void);
 extern void ShopManager_Start_mD7BEBCBEF416B42F3BE79F5936E4847F7C7E10C1 (void);
 extern void ShopManager_ResetData_m9B18B6139ED933631C69797301C06E2F7ED14BB1 (void);
@@ -563,7 +571,7 @@ extern void U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B0
 extern void U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
-static Il2CppMethodPointer s_methodPointers[552] = 
+static Il2CppMethodPointer s_methodPointers[560] = 
 {
 	BoardLayout_ConvertToGems_m9E5BAEF1E1AE7A10B97B659216EF9D2F597AE349,
 	BoardLayout_GetLayout_m598466A4B01D037F7E2C8DD9EC9B6FB61C9F028F,
@@ -715,6 +723,14 @@ static Il2CppMethodPointer s_methodPointers[552] =
 	RoundManager_LateUpdate_mB290C3DF2B6E607375EDD273B3346A52BC2E90D2,
 	RoundManager_RoundTime_m3AA214A16D016ED1170A56A31E543FDEE5356415,
 	RoundManager__ctor_mD60399260A24E671514C92C27040631D2657EFD4,
+	SFXManager_Awake_m5A18A23E994FC28BC19A86C1E99B09D671E0879D,
+	SFXManager_PlaySwipeForward_m74B78F494402BC8A67E4CABBB5DB5CDF3763008E,
+	SFXManager_PlaySwipeBack_mBB2C5134CCD172EF84811CE5DD29E0BD24F01C00,
+	SFXManager_PlayGemBreak_m2F27AF7B04BA4CD46D65A50164B25EDD96DF8853,
+	SFXManager_PlayExplode_m6024314A49751B4418C077330CF7BDAB67279E17,
+	SFXManager_PlayStoneBreak_mA84BB7EE811F713727B12615BAA717F9D7725064,
+	SFXManager_PlayRoundOver_m6D8950D075822EF5B4CCA74719EEB4F6F0DB7176,
+	SFXManager__ctor_m033D29A7E11F09A60ED2C387E8A3380392FDCA27,
 	ShopItemList__ctor_m3C9F2981F72EE36AFD0522ADD02E3E1022FD23B5,
 	ShopManager_Start_mD7BEBCBEF416B42F3BE79F5936E4847F7C7E10C1,
 	ShopManager_ResetData_m9B18B6139ED933631C69797301C06E2F7ED14BB1,
@@ -1118,7 +1134,7 @@ static Il2CppMethodPointer s_methodPointers[552] =
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42,
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19,
 };
-static const int32_t s_InvokerIndices[552] = 
+static const int32_t s_InvokerIndices[560] = 
 {
 	1254,
 	1525,
@@ -1260,9 +1276,17 @@ static const int32_t s_InvokerIndices[552] =
 	1525,
 	1585,
 	1525,
-	3199,
-	3135,
-	3135,
+	3200,
+	3136,
+	3136,
+	1585,
+	1585,
+	1585,
+	1585,
+	1585,
+	1585,
+	1585,
+	1585,
 	1585,
 	1585,
 	1585,
@@ -1420,7 +1444,7 @@ static const int32_t s_InvokerIndices[552] =
 	1585,
 	1585,
 	1585,
-	3242,
+	3243,
 	1585,
 	542,
 	1585,
@@ -1540,7 +1564,7 @@ static const int32_t s_InvokerIndices[552] =
 	1525,
 	1525,
 	1585,
-	3238,
+	3239,
 	1374,
 	1585,
 	1484,
@@ -1675,7 +1699,7 @@ static const int32_t s_InvokerIndices[552] =
 };
 static const Il2CppTokenRangePair s_rgctxIndices[1] = 
 {
-	{ 0x060000EA, { 0, 4 } },
+	{ 0x060000F2, { 0, 4 } },
 };
 extern const uint32_t g_rgctx_List_1_t7A8D24DAC6CFF538D5F7A0C950B6BDDD34CAC4DE;
 extern const uint32_t g_rgctx_List_1_get_Count_m7457007CA551834C252E21CD054FA188C8F8EE0B;
@@ -1692,7 +1716,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	552,
+	560,
 	s_methodPointers,
 	0,
 	NULL,
