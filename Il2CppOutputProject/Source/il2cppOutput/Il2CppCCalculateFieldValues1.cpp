@@ -15114,6 +15114,13 @@ struct SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E  : public MonoBehavi
 	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___roundOverSound;
 	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___swipeForward;
 	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___swipeBack;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___judgeSound;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___moneyRain;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___moneyRainShort;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___purchaseSound;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___buttonClickSound;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___mainMenuSong;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___levelSong;
 };
 struct SafeAreaContainer_t7E9B6A5DE11A1F0399AAD5066A28E528FD2FF43A  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -18274,9 +18281,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3677[1] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3678[9] = 
 {
 	static_cast<int32_t>(offsetof(RoundManager_tD077747969ED24FF911A5F46153564B9B89277FF, ___uiMan)),static_cast<int32_t>(offsetof(RoundManager_tD077747969ED24FF911A5F46153564B9B89277FF, ___endingRound)),static_cast<int32_t>(offsetof(RoundManager_tD077747969ED24FF911A5F46153564B9B89277FF, ___board)),static_cast<int32_t>(offsetof(RoundManager_tD077747969ED24FF911A5F46153564B9B89277FF, ___currentScore)),static_cast<int32_t>(offsetof(RoundManager_tD077747969ED24FF911A5F46153564B9B89277FF, ___displayScore)),static_cast<int32_t>(offsetof(RoundManager_tD077747969ED24FF911A5F46153564B9B89277FF, ___scoreSpeed)),static_cast<int32_t>(offsetof(RoundManager_tD077747969ED24FF911A5F46153564B9B89277FF, ___scoreTarget1)),static_cast<int32_t>(offsetof(RoundManager_tD077747969ED24FF911A5F46153564B9B89277FF, ___scoreTarget2)),static_cast<int32_t>(offsetof(RoundManager_tD077747969ED24FF911A5F46153564B9B89277FF, ___scoreTarget3)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3679[7] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3679[14] = 
 {
-	static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E_StaticFields, ___instance)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___gemSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___explodeSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___stoneSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___roundOverSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___swipeForward)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___swipeBack)),};
+	static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E_StaticFields, ___instance)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___gemSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___explodeSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___stoneSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___roundOverSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___swipeForward)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___swipeBack)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___judgeSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___moneyRain)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___moneyRainShort)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___purchaseSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___buttonClickSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___mainMenuSong)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___levelSong)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3680[1] = 
 {
 	static_cast<int32_t>(offsetof(ShopItemList_t9B0978BE7006CCBD7EDF89D8EBBC4DE403367D74, ___items)),};

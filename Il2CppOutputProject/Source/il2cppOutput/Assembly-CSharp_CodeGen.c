@@ -159,10 +159,16 @@ extern void CoinManager__ctor_m8E5AB576E3FAC5157F181ED7E13B3F120F12510E (void);
 extern void RoundManager_Awake_mD33CD2E3BB56B38E823DBA98740FF46CB9321539 (void);
 extern void RoundManager_Update_m951ACC85D6A50C0B968DF602B2AC86767177282D (void);
 extern void RoundManager_ResultingScore_m90DD36989D56E5F4DDA0F8BCFFE3D193C0ADBF4B (void);
-extern void RoundManager_LateUpdate_mB290C3DF2B6E607375EDD273B3346A52BC2E90D2 (void);
 extern void RoundManager_RoundTime_m3AA214A16D016ED1170A56A31E543FDEE5356415 (void);
 extern void RoundManager__ctor_mD60399260A24E671514C92C27040631D2657EFD4 (void);
 extern void SFXManager_Awake_m5A18A23E994FC28BC19A86C1E99B09D671E0879D (void);
+extern void SFXManager_PlayLevelSong_mEDA05458356E8501110677E0E46512227E028428 (void);
+extern void SFXManager_PlayMainMenuSong_m5B630BA947C738D8A5C19EF43576D5C811F7F585 (void);
+extern void SFXManager_PlayButtonClickSound_m01ED43F4E4B15C1DBDC7B16825E70D1247D20525 (void);
+extern void SFXManager_PlayPurchaseSound_m7A1EA8AC9BE6EA3E79E1DA6C453C46163E7A2E76 (void);
+extern void SFXManager_PlayMoneyRainShort_m6C83D89AFEE1FB1BAFAC31205A9CEC72C815C51E (void);
+extern void SFXManager_PlayMoneyRain_mF37E011A3577E652BF8B66B74AE69A9A816CE3AD (void);
+extern void SFXManager_PlayJudgeSound_m44E7B44CDC0F3DDC3E403FCA98D024E394D04791 (void);
 extern void SFXManager_PlaySwipeForward_m74B78F494402BC8A67E4CABBB5DB5CDF3763008E (void);
 extern void SFXManager_PlaySwipeBack_mBB2C5134CCD172EF84811CE5DD29E0BD24F01C00 (void);
 extern void SFXManager_PlayGemBreak_m2F27AF7B04BA4CD46D65A50164B25EDD96DF8853 (void);
@@ -316,6 +322,7 @@ extern void U3CStartU3Ed__4_System_Collections_IEnumerator_get_Current_mB1C119A4
 extern void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (void);
 extern void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (void);
 extern void UniversalLevelManager_Start_mBF31170E1C917241A3ABA014238A8BC994170196 (void);
+extern void UniversalLevelManager_OnDestroy_m01DD038BAB2FEB3349CCEE33BAB5A18FF8E74FE6 (void);
 extern void UniversalLevelManager_Update_m59D49E2171CE050123E1B6BDDE3719C2266315C4 (void);
 extern void UniversalLevelManager_GoToMainMenu_m0E2ED2421DB18AE2A6FF5EF8BC1571DAE216CA58 (void);
 extern void UniversalLevelManager__ctor_mFD139C5EDB910DF7CDF25B43013DC824AF19659E (void);
@@ -571,7 +578,7 @@ extern void U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B0
 extern void U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
-static Il2CppMethodPointer s_methodPointers[560] = 
+static Il2CppMethodPointer s_methodPointers[567] = 
 {
 	BoardLayout_ConvertToGems_m9E5BAEF1E1AE7A10B97B659216EF9D2F597AE349,
 	BoardLayout_GetLayout_m598466A4B01D037F7E2C8DD9EC9B6FB61C9F028F,
@@ -720,10 +727,16 @@ static Il2CppMethodPointer s_methodPointers[560] =
 	RoundManager_Awake_mD33CD2E3BB56B38E823DBA98740FF46CB9321539,
 	RoundManager_Update_m951ACC85D6A50C0B968DF602B2AC86767177282D,
 	RoundManager_ResultingScore_m90DD36989D56E5F4DDA0F8BCFFE3D193C0ADBF4B,
-	RoundManager_LateUpdate_mB290C3DF2B6E607375EDD273B3346A52BC2E90D2,
 	RoundManager_RoundTime_m3AA214A16D016ED1170A56A31E543FDEE5356415,
 	RoundManager__ctor_mD60399260A24E671514C92C27040631D2657EFD4,
 	SFXManager_Awake_m5A18A23E994FC28BC19A86C1E99B09D671E0879D,
+	SFXManager_PlayLevelSong_mEDA05458356E8501110677E0E46512227E028428,
+	SFXManager_PlayMainMenuSong_m5B630BA947C738D8A5C19EF43576D5C811F7F585,
+	SFXManager_PlayButtonClickSound_m01ED43F4E4B15C1DBDC7B16825E70D1247D20525,
+	SFXManager_PlayPurchaseSound_m7A1EA8AC9BE6EA3E79E1DA6C453C46163E7A2E76,
+	SFXManager_PlayMoneyRainShort_m6C83D89AFEE1FB1BAFAC31205A9CEC72C815C51E,
+	SFXManager_PlayMoneyRain_mF37E011A3577E652BF8B66B74AE69A9A816CE3AD,
+	SFXManager_PlayJudgeSound_m44E7B44CDC0F3DDC3E403FCA98D024E394D04791,
 	SFXManager_PlaySwipeForward_m74B78F494402BC8A67E4CABBB5DB5CDF3763008E,
 	SFXManager_PlaySwipeBack_mBB2C5134CCD172EF84811CE5DD29E0BD24F01C00,
 	SFXManager_PlayGemBreak_m2F27AF7B04BA4CD46D65A50164B25EDD96DF8853,
@@ -878,6 +891,7 @@ static Il2CppMethodPointer s_methodPointers[560] =
 	Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6,
 	Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B,
 	UniversalLevelManager_Start_mBF31170E1C917241A3ABA014238A8BC994170196,
+	UniversalLevelManager_OnDestroy_m01DD038BAB2FEB3349CCEE33BAB5A18FF8E74FE6,
 	UniversalLevelManager_Update_m59D49E2171CE050123E1B6BDDE3719C2266315C4,
 	UniversalLevelManager_GoToMainMenu_m0E2ED2421DB18AE2A6FF5EF8BC1571DAE216CA58,
 	UniversalLevelManager__ctor_mFD139C5EDB910DF7CDF25B43013DC824AF19659E,
@@ -1134,7 +1148,7 @@ static Il2CppMethodPointer s_methodPointers[560] =
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42,
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19,
 };
-static const int32_t s_InvokerIndices[560] = 
+static const int32_t s_InvokerIndices[567] = 
 {
 	1254,
 	1525,
@@ -1301,6 +1315,12 @@ static const int32_t s_InvokerIndices[560] =
 	1585,
 	1585,
 	1585,
+	1585,
+	1585,
+	1585,
+	1585,
+	1585,
+	1585,
 	1525,
 	935,
 	935,
@@ -1438,6 +1458,7 @@ static const int32_t s_InvokerIndices[560] =
 	1525,
 	1585,
 	1525,
+	1585,
 	1585,
 	1585,
 	1585,
@@ -1699,7 +1720,7 @@ static const int32_t s_InvokerIndices[560] =
 };
 static const Il2CppTokenRangePair s_rgctxIndices[1] = 
 {
-	{ 0x060000F2, { 0, 4 } },
+	{ 0x060000F8, { 0, 4 } },
 };
 extern const uint32_t g_rgctx_List_1_t7A8D24DAC6CFF538D5F7A0C950B6BDDD34CAC4DE;
 extern const uint32_t g_rgctx_List_1_get_Count_m7457007CA551834C252E21CD054FA188C8F8EE0B;
@@ -1716,7 +1737,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	560,
+	567,
 	s_methodPointers,
 	0,
 	NULL,
