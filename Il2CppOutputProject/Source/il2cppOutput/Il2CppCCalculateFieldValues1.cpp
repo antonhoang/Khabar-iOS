@@ -15108,6 +15108,8 @@ struct RoundManager_tD077747969ED24FF911A5F46153564B9B89277FF  : public MonoBeha
 };
 struct SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	bool ___soundEnabled;
+	bool ___musicEnabled;
 	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___gemSound;
 	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___explodeSound;
 	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___stoneSound;
@@ -15134,6 +15136,8 @@ struct SettingsScreen_tF9364F33D7712714FCA52086ACE2E1DC39D76E05  : public MonoBe
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___privacyPolicyScreen;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___termsOfUseScreen;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___supportUsScreen;
+	Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* ___soundToggle;
+	Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* ___musicToggle;
 };
 struct ShaderPropAnimator_t768B23A41FC3CFB5B3C2501C2411B4DEBA296906  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -18281,9 +18285,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3677[1] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3678[9] = 
 {
 	static_cast<int32_t>(offsetof(RoundManager_tD077747969ED24FF911A5F46153564B9B89277FF, ___uiMan)),static_cast<int32_t>(offsetof(RoundManager_tD077747969ED24FF911A5F46153564B9B89277FF, ___endingRound)),static_cast<int32_t>(offsetof(RoundManager_tD077747969ED24FF911A5F46153564B9B89277FF, ___board)),static_cast<int32_t>(offsetof(RoundManager_tD077747969ED24FF911A5F46153564B9B89277FF, ___currentScore)),static_cast<int32_t>(offsetof(RoundManager_tD077747969ED24FF911A5F46153564B9B89277FF, ___displayScore)),static_cast<int32_t>(offsetof(RoundManager_tD077747969ED24FF911A5F46153564B9B89277FF, ___scoreSpeed)),static_cast<int32_t>(offsetof(RoundManager_tD077747969ED24FF911A5F46153564B9B89277FF, ___scoreTarget1)),static_cast<int32_t>(offsetof(RoundManager_tD077747969ED24FF911A5F46153564B9B89277FF, ___scoreTarget2)),static_cast<int32_t>(offsetof(RoundManager_tD077747969ED24FF911A5F46153564B9B89277FF, ___scoreTarget3)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3679[14] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3679[16] = 
 {
-	static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E_StaticFields, ___instance)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___gemSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___explodeSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___stoneSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___roundOverSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___swipeForward)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___swipeBack)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___judgeSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___moneyRain)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___moneyRainShort)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___purchaseSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___buttonClickSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___mainMenuSong)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___levelSong)),};
+	static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E_StaticFields, ___instance)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___soundEnabled)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___musicEnabled)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___gemSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___explodeSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___stoneSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___roundOverSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___swipeForward)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___swipeBack)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___judgeSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___moneyRain)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___moneyRainShort)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___purchaseSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___buttonClickSound)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___mainMenuSong)),static_cast<int32_t>(offsetof(SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E, ___levelSong)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3680[1] = 
 {
 	static_cast<int32_t>(offsetof(ShopItemList_t9B0978BE7006CCBD7EDF89D8EBBC4DE403367D74, ___items)),};
@@ -18305,9 +18309,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3685[6] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3686[5] = 
 {
 	static_cast<int32_t>(offsetof(ShopItemModel_t950FEC68A03A142032CE3EED1AE65C8B66F6F12A, ___id)),static_cast<int32_t>(offsetof(ShopItemModel_t950FEC68A03A142032CE3EED1AE65C8B66F6F12A, ___price)),static_cast<int32_t>(offsetof(ShopItemModel_t950FEC68A03A142032CE3EED1AE65C8B66F6F12A, ___title)),static_cast<int32_t>(offsetof(ShopItemModel_t950FEC68A03A142032CE3EED1AE65C8B66F6F12A, ___isPurchased)),static_cast<int32_t>(offsetof(ShopItemModel_t950FEC68A03A142032CE3EED1AE65C8B66F6F12A, ___descriptionText)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3687[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3687[7] = 
 {
-	static_cast<int32_t>(offsetof(SettingsScreen_tF9364F33D7712714FCA52086ACE2E1DC39D76E05, ___aboutTheGameScreen)),static_cast<int32_t>(offsetof(SettingsScreen_tF9364F33D7712714FCA52086ACE2E1DC39D76E05, ___aboutUsScreen)),static_cast<int32_t>(offsetof(SettingsScreen_tF9364F33D7712714FCA52086ACE2E1DC39D76E05, ___privacyPolicyScreen)),static_cast<int32_t>(offsetof(SettingsScreen_tF9364F33D7712714FCA52086ACE2E1DC39D76E05, ___termsOfUseScreen)),static_cast<int32_t>(offsetof(SettingsScreen_tF9364F33D7712714FCA52086ACE2E1DC39D76E05, ___supportUsScreen)),};
+	static_cast<int32_t>(offsetof(SettingsScreen_tF9364F33D7712714FCA52086ACE2E1DC39D76E05, ___aboutTheGameScreen)),static_cast<int32_t>(offsetof(SettingsScreen_tF9364F33D7712714FCA52086ACE2E1DC39D76E05, ___aboutUsScreen)),static_cast<int32_t>(offsetof(SettingsScreen_tF9364F33D7712714FCA52086ACE2E1DC39D76E05, ___privacyPolicyScreen)),static_cast<int32_t>(offsetof(SettingsScreen_tF9364F33D7712714FCA52086ACE2E1DC39D76E05, ___termsOfUseScreen)),static_cast<int32_t>(offsetof(SettingsScreen_tF9364F33D7712714FCA52086ACE2E1DC39D76E05, ___supportUsScreen)),static_cast<int32_t>(offsetof(SettingsScreen_tF9364F33D7712714FCA52086ACE2E1DC39D76E05, ___soundToggle)),static_cast<int32_t>(offsetof(SettingsScreen_tF9364F33D7712714FCA52086ACE2E1DC39D76E05, ___musicToggle)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3688[3] = 
 {
 	static_cast<int32_t>(offsetof(StartScene_t82F5873EB56A8C552D34C2506E8BE32B68D61670, ___levelToLoad)),static_cast<int32_t>(offsetof(StartScene_t82F5873EB56A8C552D34C2506E8BE32B68D61670, ___store)),static_cast<int32_t>(offsetof(StartScene_t82F5873EB56A8C552D34C2506E8BE32B68D61670, ___currentCoins)),};

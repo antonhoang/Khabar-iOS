@@ -162,6 +162,8 @@ extern void RoundManager_ResultingScore_m90DD36989D56E5F4DDA0F8BCFFE3D193C0ADBF4
 extern void RoundManager_RoundTime_m3AA214A16D016ED1170A56A31E543FDEE5356415 (void);
 extern void RoundManager__ctor_mD60399260A24E671514C92C27040631D2657EFD4 (void);
 extern void SFXManager_Awake_m5A18A23E994FC28BC19A86C1E99B09D671E0879D (void);
+extern void SFXManager_SetSoundEnabled_mBB1603EC29DA38631C209D5404B03D92B4ED7F41 (void);
+extern void SFXManager_SetMusicEnabled_m4BEEEFD3B6F54B3C72B3E034ECD87506A567FE6E (void);
 extern void SFXManager_PlayLevelSong_mEDA05458356E8501110677E0E46512227E028428 (void);
 extern void SFXManager_PlayMainMenuSong_m5B630BA947C738D8A5C19EF43576D5C811F7F585 (void);
 extern void SFXManager_PlayButtonClickSound_m01ED43F4E4B15C1DBDC7B16825E70D1247D20525 (void);
@@ -209,6 +211,10 @@ extern void UIManager__ctor_mC9DC2B8984E76F424E73C1860AD4BD3DEBF6573F (void);
 extern void ShopItem__ctor_mB3A9151091FCB2CE8F76EE8A4FB602998FBAD90F (void);
 extern void ShopItemModel__ctor_mC2E257925FFB4EE47EC2802A10BF755EE10A2E74 (void);
 extern void SettingsScreen_Start_mD346BE6F01474396E4693A9A109CB7EF2F5148AF (void);
+extern void SettingsScreen_ToggleSound_m8134790D8B394D5EDBB5C022F2FC6E1A8EF3B957 (void);
+extern void SettingsScreen_ToggleMusic_mFEFA5C7DB9CEAF08331EFD9E723353BC7ACE8476 (void);
+extern void SettingsScreen_UpdateSound_m48EBDBFD085736F3BECF25E7F8E5A6C44A998F58 (void);
+extern void SettingsScreen_UpdateMusic_m128E5DB3799B3CA2841D793828DDD5C28B553F42 (void);
 extern void SettingsScreen_Update_m2D3C33D7AED080377D8DFFC48AF4BE461B4B6E82 (void);
 extern void SettingsScreen_ShowAboutTheGame_mC7C08FE828BA06AAB208A88C4188AC2A634C928B (void);
 extern void SettingsScreen_CloseAboutTheGame_mA9F104D1BB68D18A0977498367C97BA18FB3E81E (void);
@@ -578,7 +584,7 @@ extern void U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B0
 extern void U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
-static Il2CppMethodPointer s_methodPointers[567] = 
+static Il2CppMethodPointer s_methodPointers[573] = 
 {
 	BoardLayout_ConvertToGems_m9E5BAEF1E1AE7A10B97B659216EF9D2F597AE349,
 	BoardLayout_GetLayout_m598466A4B01D037F7E2C8DD9EC9B6FB61C9F028F,
@@ -730,6 +736,8 @@ static Il2CppMethodPointer s_methodPointers[567] =
 	RoundManager_RoundTime_m3AA214A16D016ED1170A56A31E543FDEE5356415,
 	RoundManager__ctor_mD60399260A24E671514C92C27040631D2657EFD4,
 	SFXManager_Awake_m5A18A23E994FC28BC19A86C1E99B09D671E0879D,
+	SFXManager_SetSoundEnabled_mBB1603EC29DA38631C209D5404B03D92B4ED7F41,
+	SFXManager_SetMusicEnabled_m4BEEEFD3B6F54B3C72B3E034ECD87506A567FE6E,
 	SFXManager_PlayLevelSong_mEDA05458356E8501110677E0E46512227E028428,
 	SFXManager_PlayMainMenuSong_m5B630BA947C738D8A5C19EF43576D5C811F7F585,
 	SFXManager_PlayButtonClickSound_m01ED43F4E4B15C1DBDC7B16825E70D1247D20525,
@@ -777,6 +785,10 @@ static Il2CppMethodPointer s_methodPointers[567] =
 	ShopItem__ctor_mB3A9151091FCB2CE8F76EE8A4FB602998FBAD90F,
 	ShopItemModel__ctor_mC2E257925FFB4EE47EC2802A10BF755EE10A2E74,
 	SettingsScreen_Start_mD346BE6F01474396E4693A9A109CB7EF2F5148AF,
+	SettingsScreen_ToggleSound_m8134790D8B394D5EDBB5C022F2FC6E1A8EF3B957,
+	SettingsScreen_ToggleMusic_mFEFA5C7DB9CEAF08331EFD9E723353BC7ACE8476,
+	SettingsScreen_UpdateSound_m48EBDBFD085736F3BECF25E7F8E5A6C44A998F58,
+	SettingsScreen_UpdateMusic_m128E5DB3799B3CA2841D793828DDD5C28B553F42,
 	SettingsScreen_Update_m2D3C33D7AED080377D8DFFC48AF4BE461B4B6E82,
 	SettingsScreen_ShowAboutTheGame_mC7C08FE828BA06AAB208A88C4188AC2A634C928B,
 	SettingsScreen_CloseAboutTheGame_mA9F104D1BB68D18A0977498367C97BA18FB3E81E,
@@ -1148,7 +1160,7 @@ static Il2CppMethodPointer s_methodPointers[567] =
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42,
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19,
 };
-static const int32_t s_InvokerIndices[567] = 
+static const int32_t s_InvokerIndices[573] = 
 {
 	1254,
 	1525,
@@ -1300,6 +1312,8 @@ static const int32_t s_InvokerIndices[567] =
 	1585,
 	1585,
 	1585,
+	1344,
+	1344,
 	1585,
 	1585,
 	1585,
@@ -1332,6 +1346,10 @@ static const int32_t s_InvokerIndices[567] =
 	902,
 	1344,
 	1382,
+	1585,
+	1585,
+	1585,
+	1585,
 	1585,
 	1585,
 	1585,
@@ -1720,7 +1738,7 @@ static const int32_t s_InvokerIndices[567] =
 };
 static const Il2CppTokenRangePair s_rgctxIndices[1] = 
 {
-	{ 0x060000F8, { 0, 4 } },
+	{ 0x060000FE, { 0, 4 } },
 };
 extern const uint32_t g_rgctx_List_1_t7A8D24DAC6CFF538D5F7A0C950B6BDDD34CAC4DE;
 extern const uint32_t g_rgctx_List_1_get_Count_m7457007CA551834C252E21CD054FA188C8F8EE0B;
@@ -1737,7 +1755,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	567,
+	573,
 	s_methodPointers,
 	0,
 	NULL,
