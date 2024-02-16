@@ -168,6 +168,7 @@ extern void SFXManager_SetSoundEnabled_m82E8259433AB17E1D5B964B2B633DC3FD2912FF1
 extern void SFXManager_SetMusicEnabled_m05B6EC522C9CCEB5FE1F8BCBC9D21181FD4BE87A (void);
 extern void SFXManager_PlayLevelSong_mEDA05458356E8501110677E0E46512227E028428 (void);
 extern void SFXManager_PlayMainMenuSong_m5B630BA947C738D8A5C19EF43576D5C811F7F585 (void);
+extern void SFXManager_PlayNotEnough_mA401AD5BA5BDE44AD09427B724BB6018CF6EB3F0 (void);
 extern void SFXManager_PlayButtonClickSound_m01ED43F4E4B15C1DBDC7B16825E70D1247D20525 (void);
 extern void SFXManager_PlayPurchaseSound_m7A1EA8AC9BE6EA3E79E1DA6C453C46163E7A2E76 (void);
 extern void SFXManager_PlayMoneyRainShort_m6C83D89AFEE1FB1BAFAC31205A9CEC72C815C51E (void);
@@ -586,7 +587,7 @@ extern void U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B0
 extern void U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
-static Il2CppMethodPointer s_methodPointers[575] = 
+static Il2CppMethodPointer s_methodPointers[576] = 
 {
 	BoardLayout_ConvertToGems_m9E5BAEF1E1AE7A10B97B659216EF9D2F597AE349,
 	BoardLayout_GetLayout_m598466A4B01D037F7E2C8DD9EC9B6FB61C9F028F,
@@ -744,6 +745,7 @@ static Il2CppMethodPointer s_methodPointers[575] =
 	SFXManager_SetMusicEnabled_m05B6EC522C9CCEB5FE1F8BCBC9D21181FD4BE87A,
 	SFXManager_PlayLevelSong_mEDA05458356E8501110677E0E46512227E028428,
 	SFXManager_PlayMainMenuSong_m5B630BA947C738D8A5C19EF43576D5C811F7F585,
+	SFXManager_PlayNotEnough_mA401AD5BA5BDE44AD09427B724BB6018CF6EB3F0,
 	SFXManager_PlayButtonClickSound_m01ED43F4E4B15C1DBDC7B16825E70D1247D20525,
 	SFXManager_PlayPurchaseSound_m7A1EA8AC9BE6EA3E79E1DA6C453C46163E7A2E76,
 	SFXManager_PlayMoneyRainShort_m6C83D89AFEE1FB1BAFAC31205A9CEC72C815C51E,
@@ -1164,7 +1166,7 @@ static Il2CppMethodPointer s_methodPointers[575] =
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42,
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19,
 };
-static const int32_t s_InvokerIndices[575] = 
+static const int32_t s_InvokerIndices[576] = 
 {
 	1254,
 	1525,
@@ -1309,6 +1311,7 @@ static const int32_t s_InvokerIndices[575] =
 	3200,
 	3136,
 	3136,
+	1585,
 	1585,
 	1585,
 	1585,
@@ -1744,7 +1747,7 @@ static const int32_t s_InvokerIndices[575] =
 };
 static const Il2CppTokenRangePair s_rgctxIndices[1] = 
 {
-	{ 0x06000100, { 0, 4 } },
+	{ 0x06000101, { 0, 4 } },
 };
 extern const uint32_t g_rgctx_List_1_t7A8D24DAC6CFF538D5F7A0C950B6BDDD34CAC4DE;
 extern const uint32_t g_rgctx_List_1_get_Count_m7457007CA551834C252E21CD054FA188C8F8EE0B;
@@ -1761,7 +1764,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	575,
+	576,
 	s_methodPointers,
 	0,
 	NULL,
